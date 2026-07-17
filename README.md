@@ -39,3 +39,6 @@ RedditDems/
 3. **Figures output** — create an empty `output/` directory at the repository root before running `plots.ipynb`.
 
 All the versions of the code are indexed on Zenodo and can be cited with the following DOI: [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21416527-blue.svg)](https://doi.org/10.5281/zenodo.21416527)
+
+The most recent version of the dataset is also indexed on Zenodo and can be found in the following DOI:
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21416900-blue.svg)](https://doi.org/10.5281/zenodo.21416900)
