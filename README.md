@@ -37,3 +37,5 @@ RedditDems/
 1. **Shared/processed data** — download `main_data/` and `supplementary_data/` from the accompanying Zotero repository and place them under `data_shared/`. This is enough to run `plots.ipynb` and reproduce all figures and tables.
 2. **Raw Reddit data** — `main.ipynb` and `subreddit_filter.ipynb` additionally require the raw Reddit submission dumps, which are not included here due to their size. They are publicly available from the [Pushshift dataset](https://arxiv.org/abs/2001.08435). Download the monthly submission dumps for 2019–2023 and place them at `data_shared/reddit/submissions/{year}/RS_{year}-{month}.bz2`. These two notebooks also write large intermediate outputs back into `data_shared/reddit/`, which are then aggregated into the smaller files under `data_shared/supplementary_data/` and `data_shared/main_data/`.
 3. **Figures output** — create an empty `output/` directory at the repository root before running `plots.ipynb`.
+
+All the versions of the code are indexed on Zenodo and can be cited with the following DOI: [![DOI](https://zenodo.org/badge/1302914514.svg)](https://doi.org/10.5281/zenodo.21416527)
