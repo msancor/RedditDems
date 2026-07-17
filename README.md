@@ -17,7 +17,7 @@ Code accompanying the paper *Conspiracy and Environment Communities on Reddit So
 - **`source/`** — standalone scripts, run separately from the notebooks:
   - `infomap.py` — detects communities on the filtered AFG using the Infomap algorithm (via `igraph`).
   - `seed_communities.py` — uses the Reddit API (`praw`) to expand a list of seed subreddits into their surrounding community and fetch subscriber counts.
-- **`data_shared/`** — input/output data shared via Zotero (see [data_shared/README.md](data_shared/README.md)); not fully included in this repository. `data_shared/reddit/` holds raw and intermediate data and is not shared at all.
+- **`data_shared/`** — input/output data shared via Zotero; not fully included in this repository. `data_shared/reddit/` holds raw and intermediate data and is not shared at all.
 - **`LICENSE`** — MIT license.
 
 ## Setting up the directories
@@ -34,6 +34,6 @@ RedditDems/
 └── output/                      # figures saved by plots.ipynb (create empty)
 ```
 
-1. **Shared/processed data** — download `main_data/` and `supplementary_data/` from the accompanying Zotero repository and place them under `data_shared/` (see [data_shared/README.md](data_shared/README.md) for file descriptions). This is enough to run `plots.ipynb` and reproduce all figures and tables.
+1. **Shared/processed data** — download `main_data/` and `supplementary_data/` from the accompanying Zotero repository and place them under `data_shared/`. This is enough to run `plots.ipynb` and reproduce all figures and tables.
 2. **Raw Reddit data** — `main.ipynb` and `subreddit_filter.ipynb` additionally require the raw Reddit submission dumps, which are not included here due to their size. They are publicly available from the [Pushshift dataset](https://arxiv.org/abs/2001.08435). Download the monthly submission dumps for 2019–2023 and place them at `data_shared/reddit/submissions/{year}/RS_{year}-{month}.bz2`. These two notebooks also write large intermediate outputs back into `data_shared/reddit/`, which are then aggregated into the smaller files under `data_shared/supplementary_data/` and `data_shared/main_data/`.
 3. **Figures output** — create an empty `output/` directory at the repository root before running `plots.ipynb`.
