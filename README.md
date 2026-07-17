@@ -1,4 +1,4 @@
-# RedditDems
+# Reddit Demographics
 
 Code accompanying the paper *Conspiracy and Environment Communities on Reddit Sort Along Different Demographic Axes* (under submission). It builds an Attention-Flow Graph (AFG) between subreddits from Reddit submission data, projects sociodemographic scores (age, gender, partisanship, affluence) onto users and communities, and analyzes how different demographic groups move between communities.
 
